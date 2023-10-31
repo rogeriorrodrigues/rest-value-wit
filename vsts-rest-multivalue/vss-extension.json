@@ -1,0 +1,111 @@
+{
+    "manifestVersion": 1.0,
+    "id": "vsts-rest-multivalue-control",
+    "version": "2.0.9",
+    "name": "Poc Tim",
+    "description": "",
+    "publisher": "MODIFICAR AQUI",
+    "public": false,
+    "icons": {
+        "default": "img/logo.png"
+    },
+    "categories": [
+        "Azure Pipelines",
+        "Azure Boards"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        },
+        {
+            "id": "Microsoft.TeamFoundation.Server",
+            "version": "[14.4,)"
+        }
+    ],
+    "files": [
+        {
+            "path": "dist",
+            "addressable": true
+        },
+        {
+            "path": "img",
+            "addressable": true
+        }
+    ],
+    "tags": [
+        "Work Items",
+        "Work Item Control",
+        "Sample"
+    ],
+    "content": {
+        "details": {
+            "path": "storepage.md"
+        }
+    },
+    "scopes": [
+        "vso.work",
+        "vso.agentpools",
+        "vso.build",
+        "vso.code",
+        "vso.dashboards",
+        "vso.entitlements",
+        "vso.extension",
+        "vso.extension.data",
+        "vso.gallery",
+        "vso.notification",
+        "vso.packaging",
+        "vso.project",
+        "vso.release",
+        "vso.test"
+    ],
+    "contributions": [
+        {
+            "id": "multivalue-form-control",
+            "type": "ms.vss-work-web.work-item-form-control",
+            "description": "",
+            "targets": [
+                "ms.vss-work-web.work-item-form"
+            ],
+            "properties": {
+                "name": "Rest Multivalue control",
+                "uri": "dist/multivalue.html",
+                "height": 50,
+                "inputs": [
+                    {
+                        "id": "FieldName",
+                        "name": "Mapeamento de Campo",
+                        "type": "WorkItemField",
+                        "properties": {
+                            "workItemFieldTypes": [
+                                "String",
+                                "PlainText",
+                                "HTML"
+                            ]
+                        },
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": true
+                        }
+                    },
+                    {
+                        "id": "Url",
+                        "name": "Url for the suggested values",
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": true
+                        }
+                    },
+                    {
+                        "id": "Property",
+                        "name": "Object property",
+                        "description": "If the url returns an array of objects, select which object property to use as the string. Leave blank if the server returns an array of strings.",
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": false
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
