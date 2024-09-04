@@ -1,6 +1,6 @@
-# Prova de conceito TIM
+# Prova de conceito Consumo de dados em Work Items via API
 
-Esse repositório tem como objetivo guardar os artefatos do projeto de prova de conceito da TIM.
+Esse repositório tem como objetivo guardar os artefatos do projeto de prova de conceito.
 
 Este projeto é composto por três frentes principais: `back-end`, `vsts-layout-sample` e `vsts-rest-multivalue`. O `back-end` refere-se à parte do sistema que lida com a lógica e os dados do servidor. O `vsts-layout-sample` é responsável pelo layout visual e a aparência do sistema, proporcionando uma experiência do usuário intuitiva. Por fim, o `vsts-rest-multivalue` trata da funcionalidade de manipulação de valores múltiplos no contexto do sistema. Cada frente desempenha um papel fundamental no desenvolvimento e funcionamento geral do projeto.
 
